@@ -1,0 +1,48 @@
+@font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Roboto'), local('Roboto-Bold'), url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'RobotoSlab';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Roboto'), local('Roboto-Bold'), url(../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf) format('truetype');
+}
+
+.swiper-container {
+   width: 100vw;
+   height: 30vh
+}
+
+.swiper-slide  {
+   font-family: 'RobotoSlab';
+   font-size: 1.4em;
+   font-weight: 1000;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#ssone {
+   background: url('../images/1.jpg');
+}
+
+#sstwo {
+   background: url('../images/2.jpg');
+}
+
+#ssthree {
+   background: url('../images/3.jpg');
+}
+
+#ssfour {
+   background: url('../images/4.jpg');
+}
+
+#ssfive {
+   background: url('../images/5.jpg');
+}
