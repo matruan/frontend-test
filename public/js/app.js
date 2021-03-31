@@ -42,6 +42,10 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-con
   },
   centeredSlides: true
 });
+$('.swiper-pagination-bullet').on('click', function (e) {
+  e.preventDefault();
+  $('.text').toggleClass('movetext');
+});
 
 /***/ }),
 

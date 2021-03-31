@@ -32,3 +32,8 @@ const swiper = new Swiper('.swiper-container', {
    },
    centeredSlides: true
  });
+
+ $('.swiper-pagination-bullet').on('click', function(e){
+  e.preventDefault();
+  $('.text').toggleClass('movetext');
+});

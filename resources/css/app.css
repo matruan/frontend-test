@@ -71,3 +71,26 @@
 #ssfive {
    background: url('../images/5.jpg');
 }
+
+.textbox {
+   width: 25em;
+   text-align: left;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.movetext {
+   padding-left: -100%;
+   animation: marquee 1s linear;
+   -webkit-animation: marquee 1s linear;
+}
+     
+@-webkit-keyframes marquee {
+   0%   { transform: translateX(-100%, 0); }
+   100% { transform: translateX(0, 0); }
+}
+
+@keyframes marquee {
+   0%   { transform: translate(-100%, 0); }
+   100% { transform: translate(0, 0); }
+}
