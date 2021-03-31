@@ -42,10 +42,24 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-con
   },
   centeredSlides: true
 });
-$('.swiper-pagination-bullet').on('click', function (e) {
-  e.preventDefault();
-  $('.text').toggleClass('movetext');
-});
+$(document).on('ready', $('.textbox > div.text').addClass('movetext'));
+$('.textbox > div.text').on('animationend', function () {
+  $('.textbox > div.text').removeClass('movetext');
+}); // selecciona el nodo target
+
+var target = document.querySelector('.swiper-pagination'); // Crea una instancia de observer
+
+var observer = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    $('.textbox > div.text').addClass('movetext');
+  });
+}); // Configura el observer:
+
+var config = {
+  attributes: true
+}; // pasa al observer el nodo y la configuracion
+
+observer.observe(target, config);
 
 /***/ }),
 
