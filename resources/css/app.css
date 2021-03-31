@@ -27,6 +27,31 @@
    justify-content: center;
 }
 
+.swiper-pagination {
+   font-family: 'Roboto';
+   font-size: 1.2em;
+}
+
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	background:  #007aff;
+   opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+}
+
+.swiper-pagination-bullet:hover {
+   transform: translateY(-0.5em);
+   transition: transform .1s;
+}
+
 #ssone {
    background: url('../images/1.jpg');
 }

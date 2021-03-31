@@ -18,13 +18,18 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
  // init Swiper:
 
+var menu = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'];
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function renderBullet(index, className) {
+      return '<span class="' + className + '">' + menu[index] + '</span>';
+    }
   },
   // Navigation arrows
   navigation: {
